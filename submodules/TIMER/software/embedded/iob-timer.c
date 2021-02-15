@@ -1,5 +1,5 @@
 #include "iob-timer.h"
-#include "sw_reg.h"
+#include "TIMER_sw_reg.h"
 #include "interconnect.h"
 
 static int s_base;

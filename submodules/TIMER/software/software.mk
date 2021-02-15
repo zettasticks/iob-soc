@@ -11,9 +11,9 @@ endif
 INCLUDE+=-I$(TIMER_DIR)/software
 
 #HEADERS
-HDR+=$(TIMER_SW_DIR)/iob-timer.h $(TIMER_SW_DIR)/sw_reg.h
+HDR+=$(TIMER_SW_DIR)/iob-timer.h $(TIMER_SW_DIR)/TIMER_sw_reg.h
 
-$(TIMER_SW_DIR)/sw_reg.h: $(TIMER_HW_INC_DIR)/sw_reg.v
+$(TIMER_SW_DIR)/TIMER_sw_reg.h: $(TIMER_HW_INC_DIR)/TIMER_sw_reg.v
 	$(LIB_DIR)/software/mkregs.py $< SW
-	mv sw_reg.h $@
+	mv TIMER_sw_reg.h $@
 

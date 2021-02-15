@@ -17,9 +17,9 @@ module iob_timer #(parameter
 		`INPUT(rst,1)
 	);
 
-`include "sw_reg.v"
-`include "sw_reg_gen.v"
-`include "sw_reg_w.vh"
+`include "TIMER_sw_reg.v"
+`include "TIMER_sw_reg_gen.v"
+`include "TIMER_sw_reg_w.vh"
 
 // Reset if signal high or reset reg asserted
 `SIGNAL(reset,1)
